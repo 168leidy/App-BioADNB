@@ -63,23 +63,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-.state('tab.juego', {
-    url: '/juego',
+
+ // Each tab has its own nav history stack:
+  .state('tab.game', {
+    url: '/game',
     views: {
-      'tab-juego': {
-        templateUrl: 'templates/tab-juego.html',
-        controller: 'JuegoCtrl'
+      'tab-game': {
+        templateUrl: 'templates/tab-game.html',
+        controller: 'GameCtrl'
       }
     }
   })
 
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.tablanutri', {
+      url: '/tablanutri',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-tablanutri': {
+          templateUrl: 'templates/tab-tablanutri.html',
+          controller: 'TablanutriCtrl'
         }
       }
     })
@@ -93,12 +95,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.infografias', {
+    url: '/infografias',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-infografias': {
+        templateUrl: 'templates/tab-infografias.html',
+        controller: 'InfografiasCtrl'
       }
     }
   });
